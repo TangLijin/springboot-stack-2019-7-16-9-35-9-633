@@ -63,4 +63,49 @@ public class EmployeesControllerTest {
                         "]"));
     }
 
+    @Test
+    public void should_return_expected_employee_when_call_addEmproyee(){
+        String requestBody = "[\n" +
+                "    {\n" +
+                "        \"id\": 0,\n" +
+                "        \"name\": \"Xiaoming\",\n" +
+                "        \"gender\": \"Male\",\n" +
+                "        \"age\": 20\n" +
+                "    },\n" +
+                "    {\n" +
+                "        \"id\": 1,\n" +
+                "        \"name\": \"Xiaohong\",\n" +
+                "        \"gender\": \"Female\",\n" +
+                "        \"age\": 19\n" +
+                "    },\n" +
+                "    {\n" +
+                "        \"id\": 2,\n" +
+                "        \"name\": \"Xiaozhi\",\n" +
+                "        \"gender\": \"Male\",\n" +
+                "        \"age\": 15\n" +
+                "    },\n" +
+                "    {\n" +
+                "        \"id\": 3,\n" +
+                "        \"name\": \"Xiaogang\",\n" +
+                "        \"gender\": \"Male\",\n" +
+                "        \"age\": 16\n" +
+                "    },\n" +
+                "    {\n" +
+                "        \"id\": 4,\n" +
+                "        \"name\": \"Xiaoxia\",\n" +
+                "        \"gender\": \"Female\",\n" +
+                "        \"age\": 15\n" +
+                "    }\n" +
+                "]";
+//        mockMvc.perform(post("/employees")
+//                .contentType(MediaType.APPLICATION_JSON)
+//                .content(requestBody)
+//                .accept(MediaType.APPLICATION_JSON))
+//                .andDo(print())
+//                .andExpect(status().isOk())
+//                .andExpect(content().json());
+
+    }
+
+
 }
