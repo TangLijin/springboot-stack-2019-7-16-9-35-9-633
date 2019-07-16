@@ -38,8 +38,9 @@ public class EmployeesController {
         return emplyeeList.get(index);
     }
 
+
     @GetMapping
-    public List<Emplyee> getEmployeeOfSpecificGender(@RequestParam(value = "gender", required = false, defaultValue = "null") String gender,
+    public List<Emplyee> getEmployees(@RequestParam(value = "gender", required = false, defaultValue = "null") String gender,
                                                      @RequestParam(value = "page", required = false, defaultValue = "-1") Integer page,
                                                      @RequestParam(value = "pageSize", required = false, defaultValue = "-1") Integer pageSize) {
         if (gender != null) {

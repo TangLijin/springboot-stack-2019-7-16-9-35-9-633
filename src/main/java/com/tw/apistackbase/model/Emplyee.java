@@ -29,7 +29,7 @@ public class Emplyee {
     }
 
     public static List<Emplyee> createEmployeeList(){
-        List<Emplyee> emplyeeList = new ArrayList<>();
+        List<Emplyee> emplyeeList = emp
         Emplyee emplyee = new Emplyee("Xiaoming",0,20,"Male");
         emplyeeList.add(emplyee);
         emplyee = new Emplyee("Xiaohong",1,19,"Female");
